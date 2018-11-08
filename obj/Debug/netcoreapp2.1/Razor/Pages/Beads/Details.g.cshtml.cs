@@ -200,7 +200,7 @@ using BeadDotNetApp;
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(1489, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6c297feeb075423ebdc3b16ee84c88f4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c5208b1eb3304fa7bff397c53eef93a9", async() => {
                 BeginContext(1540, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -235,7 +235,7 @@ using BeadDotNetApp;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(1556, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c1355f334e0846649979f038ab05cb77", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "00e8b3a95b0643449a85489052d7c1b8", async() => {
                 BeginContext(1578, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();

@@ -13,7 +13,6 @@ namespace BeadDotNetApp.Pages.Beads{
     public class IndexModel : PageModel{
 
         public IList<Bead> Bead { get;set; }
-        public string SearchString { get; set; }
         public SelectList Materials { get; set; }
         public SelectList Shapes {get; set;}
         public string BeadMaterial { get; set; }
@@ -29,17 +28,20 @@ namespace BeadDotNetApp.Pages.Beads{
             IQueryable<string> mQuery = from b in _context.Bead orderby b.Material select b.Material;
             IQueryable<string> sQuery = from b in _context.Bead orderby b.Shape select b.Shape;
             var beads = from b in _context.Bead select b;
+            
+            Materials = new SelectList(await mQuery.Distinct().ToListAsync());
+            Shapes = new SelectList(await sQuery.Distinct().ToListAsync());
+            BeadMaterial = beadMaterial;
+            BeadShape = beadShape;
+            
             if (!String.IsNullOrEmpty(beadMaterial)){
                 beads = beads.Where(b => b.Material == beadMaterial);
             }
             if(!String.IsNullOrEmpty(beadShape)){
                 beads = beads.Where(b => b.Shape == beadShape);
             }
-            Materials = new SelectList(await mQuery.Distinct().ToListAsync());
-            Shapes = new SelectList(await sQuery.Distinct().ToListAsync());
+            beads = beads.OrderBy(b => b.Material);
             Bead = await beads.ToListAsync();
-            BeadMaterial = beadMaterial;
-            BeadShape = beadShape;
         }
     }
 }

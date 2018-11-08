@@ -22,9 +22,7 @@ namespace BeadDotNetApp{
                 var services = scope.ServiceProvider;
                 try{
                     var context = services.GetRequiredService<BeadContext>();
-                    // requires using Microsoft.EntityFrameworkCore;
                     context.Database.Migrate();
-                    // Requires using RazorPagesMovie.Models;
                     SeedData.Initialize(services);
                 }catch (Exception ex){
                     var logger = services.GetRequiredService<ILogger<Program>>();
