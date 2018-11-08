@@ -1,0 +1,64 @@
+@page
+@model BeadDotNetApp.Pages.Beads.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>Bead</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Bead.Material" class="control-label"></label>
+                <input asp-for="Bead.Material" class="form-control" />
+                <span asp-validation-for="Bead.Material" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bead.Shape" class="control-label"></label>
+                <input asp-for="Bead.Shape" class="form-control" />
+                <span asp-validation-for="Bead.Shape" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bead.Color" class="control-label"></label>
+                <input asp-for="Bead.Color" class="form-control" />
+                <span asp-validation-for="Bead.Color" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bead.SizeMM" class="control-label"></label>
+                <input asp-for="Bead.SizeMM" class="form-control" />
+                <span asp-validation-for="Bead.SizeMM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bead.Quantity" class="control-label"></label>
+                <input asp-for="Bead.Quantity" class="form-control" />
+                <span asp-validation-for="Bead.Quantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bead.PricePoint" class="control-label"></label>
+                <input asp-for="Bead.PricePoint" class="form-control" />
+                <span asp-validation-for="Bead.PricePoint" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bead.Brand" class="control-label"></label>
+                <input asp-for="Bead.Brand" class="form-control" />
+                <span asp-validation-for="Bead.Brand" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

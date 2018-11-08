@@ -1,0 +1,87 @@
+@page
+@model BeadDotNetApp.Pages.Beads.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+
+<form>
+    <p>
+        <select asp-for="BeadMaterial" asp-items="Model.Materials">
+            <option value="">All</option> 
+            <option value="Model.Materials">None</option>
+        </select>  
+        <select asp-for="BeadShape" asp-items="Model.Shapes">
+            <option value="">All</option>
+            <option value="Model.Shapes">None</option>
+        </select>
+        <!-- Material: <input type="text" name="BeadMaterial"> -->
+        <input type="submit" value="Search"/>
+    </p>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Bead[0].Material)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bead[0].Shape)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bead[0].Color)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bead[0].SizeMM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bead[0].Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bead[0].PricePoint)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bead[0].Brand)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Bead) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Material)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Shape)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Color)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SizeMM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PricePoint)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Brand)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

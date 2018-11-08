@@ -30,3 +30,8 @@
 /Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/BeadDotNetApp.dll
 /Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/BeadDotNetApp.pdb
 /Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/BeadDotNetApp.csproj.CopyComplete
+/Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/Razor/Pages/Beads/Create.g.cshtml.cs
+/Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/Razor/Pages/Beads/Delete.g.cshtml.cs
+/Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/Razor/Pages/Beads/Details.g.cshtml.cs
+/Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/Razor/Pages/Beads/Edit.g.cshtml.cs
+/Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/Razor/Pages/Beads/Index.g.cshtml.cs
