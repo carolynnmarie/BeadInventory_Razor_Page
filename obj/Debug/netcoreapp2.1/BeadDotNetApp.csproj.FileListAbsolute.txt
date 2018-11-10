@@ -35,3 +35,8 @@
 /Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/Razor/Pages/Beads/Details.g.cshtml.cs
 /Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/Razor/Pages/Beads/Edit.g.cshtml.cs
 /Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/Razor/Pages/Beads/Index.g.cshtml.cs
+/Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/Razor/Pages/Findings/Create.g.cshtml.cs
+/Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/Razor/Pages/Findings/Delete.g.cshtml.cs
+/Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/Razor/Pages/Findings/Details.g.cshtml.cs
+/Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/Razor/Pages/Findings/Edit.g.cshtml.cs
+/Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/Razor/Pages/Findings/Index.g.cshtml.cs

@@ -29,9 +29,10 @@ namespace BeadDotNetApp{
             });
             services.AddDbContext<BeadContext>(options => 
                 options.UseSqlite(Configuration.GetConnectionString("BeadContext")));
+            services.AddDbContext<FindingContext>(options =>
+                options.UseSqlite(Configuration.GetConnectionString("FindingContext")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
-
         public void Configure(IApplicationBuilder app, IHostingEnvironment env){
             if (env.IsDevelopment()){
                 app.UseDeveloperExceptionPage();

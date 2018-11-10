@@ -1,0 +1,64 @@
+@page
+@model BeadDotNetApp.Pages.Findings.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Finding</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Finding.FindingCategory)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Finding.FindingCategory)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Finding.Material)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Finding.Material)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Finding.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Finding.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Finding.Color)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Finding.Color)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Finding.Length_CM)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Finding.Length_CM)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Finding.Price_Point)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Finding.Price_Point)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Finding.Brand)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Finding.Brand)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Finding.ID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to Finding List</a>
+    </form>
+</div>

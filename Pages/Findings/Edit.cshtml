@@ -1,0 +1,65 @@
+@page
+@model BeadDotNetApp.Pages.Findings.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Finding</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Finding.ID" />
+            <div class="form-group">
+                <label asp-for="Finding.FindingCategory" class="control-label"></label>
+                <input asp-for="Finding.FindingCategory" class="form-control" />
+                <span asp-validation-for="Finding.FindingCategory" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Finding.Material" class="control-label"></label>
+                <input asp-for="Finding.Material" class="form-control" />
+                <span asp-validation-for="Finding.Material" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Finding.Description" class="control-label"></label>
+                <input asp-for="Finding.Description" class="form-control" />
+                <span asp-validation-for="Finding.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Finding.Color" class="control-label"></label>
+                <input asp-for="Finding.Color" class="form-control" />
+                <span asp-validation-for="Finding.Color" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Finding.Length_CM" class="control-label"></label>
+                <input asp-for="Finding.Length_CM" class="form-control" />
+                <span asp-validation-for="Finding.Length_CM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Finding.Price_Point" class="control-label"></label>
+                <input asp-for="Finding.Price_Point" class="form-control" />
+                <span asp-validation-for="Finding.Price_Point" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Finding.Brand" class="control-label"></label>
+                <input asp-for="Finding.Brand" class="form-control" />
+                <span asp-validation-for="Finding.Brand" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to Finding List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

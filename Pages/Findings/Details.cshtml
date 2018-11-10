@@ -1,0 +1,61 @@
+@page
+@model BeadDotNetApp.Pages.Findings.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Finding</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Finding.FindingCategory)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Finding.FindingCategory)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Finding.Material)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Finding.Material)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Finding.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Finding.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Finding.Color)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Finding.Color)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Finding.Length_CM)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Finding.Length_CM)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Finding.Price_Point)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Finding.Price_Point)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Finding.Brand)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Finding.Brand)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Finding.ID">Edit</a> |
+    <a asp-page="./Index">Back to Finding List</a>
+</div>

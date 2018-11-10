@@ -24,6 +24,7 @@ namespace BeadDotNetApp{
                     var context = services.GetRequiredService<BeadContext>();
                     context.Database.Migrate();
                     SeedData.Initialize(services);
+                    SeedFindingData.InitializeData(services);
                 }catch (Exception ex){
                     var logger = services.GetRequiredService<ILogger<Program>>();
                     logger.LogError(ex, "An error occurred seeding the DB.");

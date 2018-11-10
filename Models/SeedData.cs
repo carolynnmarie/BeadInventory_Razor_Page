@@ -4,8 +4,10 @@ using System;
 using System.Linq;
 
 
-namespace BeadDotNetApp.Models{    
+namespace BeadDotNetApp.Models{  
+
     public static class SeedData{ 
+
         public static void Initialize(IServiceProvider serviceProvider){
              using (var context = new BeadContext(
                 serviceProvider.GetRequiredService<DbContextOptions<BeadContext>>())){
@@ -26,10 +28,10 @@ namespace BeadDotNetApp.Models{
                 new Bead{Material = "Adventurine",Shape = "round", Color = "green", SizeMM = 4,
                         Quantity = 25,PricePoint = 0.03M,Brand = "Bead Gallery"},
                 new Bead{Material= "Hematite",Shape="donut",Color="metallic grey", SizeMM = 12,
-                        Quantity = 15, PricePoint = 0.1M, Brand = "Bead Gallery"}
-                );
+                        Quantity = 15, PricePoint = 0.1M, Brand = "Bead Gallery"});
                 context.SaveChanges();
-            };
+                };
+            
         }
     }
 }
