@@ -4,18 +4,34 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="row">
-    <a asp-page="./Privacy">Privacy</a>
-    <a asp-page="./Contact">Contact</a>
-    <a asp-page="./About">About</a>
-</div>
+
 <div class="item">
     <span style="font-size: x-large">
-        <a asp-page="./Beads/Index">Go To Beads</a>
+        <a asp-page="./Beads/Index">Beads</a>
     </span>
 </div>
 <div class="item">
     <span style="font-size: x-large">
-        <a asp-page="./Findings/Index">Go To Findings</a>
+        <a asp-page="./Findings/Index">Findings</a>
+    </span>
+</div>
+<div class="item">
+    <span style="font-size: x-large">
+        <a asp-page="./StringingMaterials/Index">Stringing Materials</a>
+    </span>
+</div>
+<div class="item">
+    <span style="text-align: right">
+        <span style="font-size:x-small">
+        <a asp-page="./Privacy">
+        <button>Privacy</button>
+        </a>
+        <a asp-page="./Contact">
+        <button>Contact</button>
+        </a>
+        <a asp-page="./About">
+        <button>About</button>
+        </a>
+        </span>
     </span>
 </div>

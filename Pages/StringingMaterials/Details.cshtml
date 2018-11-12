@@ -1,0 +1,55 @@
+@page
+@model BeadDotNetApp.Pages.StringingMaterials.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>StringingMaterial</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StringingMaterial.Category)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StringingMaterial.Category)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StringingMaterial.Material)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StringingMaterial.Material)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StringingMaterial.Color)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StringingMaterial.Color)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StringingMaterial.Price_Per_Foot)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StringingMaterial.Price_Per_Foot)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StringingMaterial.Brand)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StringingMaterial.Brand)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StringingMaterial.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StringingMaterial.Description)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.StringingMaterial.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

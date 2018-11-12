@@ -1,0 +1,60 @@
+@page
+@model BeadDotNetApp.Pages.StringingMaterials.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>StringingMaterial</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="StringingMaterial.ID" />
+            <div class="form-group">
+                <label asp-for="StringingMaterial.Category" class="control-label"></label>
+                <input asp-for="StringingMaterial.Category" class="form-control" />
+                <span asp-validation-for="StringingMaterial.Category" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StringingMaterial.Material" class="control-label"></label>
+                <input asp-for="StringingMaterial.Material" class="form-control" />
+                <span asp-validation-for="StringingMaterial.Material" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StringingMaterial.Color" class="control-label"></label>
+                <input asp-for="StringingMaterial.Color" class="form-control" />
+                <span asp-validation-for="StringingMaterial.Color" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StringingMaterial.Price_Per_Foot" class="control-label"></label>
+                <input asp-for="StringingMaterial.Price_Per_Foot" class="form-control" />
+                <span asp-validation-for="StringingMaterial.Price_Per_Foot" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StringingMaterial.Brand" class="control-label"></label>
+                <input asp-for="StringingMaterial.Brand" class="form-control" />
+                <span asp-validation-for="StringingMaterial.Brand" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StringingMaterial.Description" class="control-label"></label>
+                <input asp-for="StringingMaterial.Description" class="form-control" />
+                <span asp-validation-for="StringingMaterial.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

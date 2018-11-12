@@ -1,0 +1,58 @@
+@page
+@model BeadDotNetApp.Pages.StringingMaterials.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>StringingMaterial</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StringingMaterial.Category)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StringingMaterial.Category)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StringingMaterial.Material)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StringingMaterial.Material)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StringingMaterial.Color)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StringingMaterial.Color)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StringingMaterial.Price_Per_Foot)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StringingMaterial.Price_Per_Foot)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StringingMaterial.Brand)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StringingMaterial.Brand)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StringingMaterial.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StringingMaterial.Description)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="StringingMaterial.ID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>
