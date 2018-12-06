@@ -33,7 +33,10 @@ namespace BeadDotNetApp{
                 options.UseSqlite(Configuration.GetConnectionString("FindingContext")));
             services.AddDbContext<StringingMaterialContext>(options =>
                 options.UseSqlite(Configuration.GetConnectionString("StringingMaterialContext")));
+            services.AddDbContext<StoreListContext>(options =>
+                options.UseSqlite(Configuration.GetConnectionString("StoreListContext")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            
         }
         public void Configure(IApplicationBuilder app, IHostingEnvironment env){
             if (env.IsDevelopment()){

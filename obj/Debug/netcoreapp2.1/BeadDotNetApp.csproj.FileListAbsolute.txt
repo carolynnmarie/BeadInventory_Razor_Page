@@ -45,3 +45,8 @@
 /Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/Razor/Pages/StringingMaterials/Details.g.cshtml.cs
 /Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/Razor/Pages/StringingMaterials/Edit.g.cshtml.cs
 /Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/Razor/Pages/StringingMaterials/Index.g.cshtml.cs
+/Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/Razor/Pages/StoreLists/Create.g.cshtml.cs
+/Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/Razor/Pages/StoreLists/Delete.g.cshtml.cs
+/Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/Razor/Pages/StoreLists/Details.g.cshtml.cs
+/Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/Razor/Pages/StoreLists/Edit.g.cshtml.cs
+/Users/carolynn/dev/C-Sharp/BeadDotNetApp/obj/Debug/netcoreapp2.1/Razor/Pages/StoreLists/Index.g.cshtml.cs
