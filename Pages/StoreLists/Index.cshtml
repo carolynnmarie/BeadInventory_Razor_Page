@@ -11,14 +11,58 @@
     <a asp-page="Create">Create New</a>
 </p>
 <table class="table">
-    <thead>
+        <thead>
         <tr>
-            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bead[0].Material)
+            </th>
+            <!-- <th>
+                @Html.DisplayNameFor(model => model.Bead[0].Material)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bead[0].Shape)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bead[0].Color)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bead[0].SizeMM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bead[0].Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bead[0].PricePoint)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bead[0].Brand)
+            </th> -->
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.StoreList) {
+@foreach (var item in Model.Bead) {
         <tr>
+            <!-- <td>
+                @Html.DisplayFor(modelItem => item.Material)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Shape)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Color)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SizeMM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PricePoint)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Brand)
+            </td> -->
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |

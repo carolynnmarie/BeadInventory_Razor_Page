@@ -11,12 +11,13 @@ namespace BeadDotNetApp.Pages.StoreLists{
 
     public class DetailsModel : PageModel{
 
-        private readonly StoreListContext _context;
-        public BeadDotNetApp.Models.StoreList StoreList { get; set; }
+        private readonly BeadDotNetApp.Models.StoreListContext _context;
 
-        public DetailsModel(StoreListContext context){
+        public DetailsModel(BeadDotNetApp.Models.StoreListContext context){
             _context = context;
         }
+
+        public StoreList StoreList { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id){
             if (id == null){

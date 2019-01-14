@@ -7,38 +7,51 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using BeadDotNetApp.Models;
 
-namespace BeadDotNetApp.Pages.StoreLists{
+namespace BeadDotNetApp.Pages.StoreLists
+{
+    public class DeleteModel : PageModel
+    {
+        private readonly BeadDotNetApp.Models.StoreListContext _context;
 
-    public class DeleteModel : PageModel{
-
-        private readonly StoreListContext _context;
-        [BindProperty]
-        public BeadDotNetApp.Models.StoreList StoreList { get; set; }
-
-        public DeleteModel(StoreListContext context){
+        public DeleteModel(BeadDotNetApp.Models.StoreListContext context)
+        {
             _context = context;
         }
 
-        public async Task<IActionResult> OnGetAsync(int? id){
-            if (id == null){
+        [BindProperty]
+        public StoreList StoreList { get; set; }
+
+        public async Task<IActionResult> OnGetAsync(int? id)
+        {
+            if (id == null)
+            {
                 return NotFound();
             }
+
             StoreList = await _context.StoreList.FirstOrDefaultAsync(m => m.ID == id);
-            if (StoreList == null){
+
+            if (StoreList == null)
+            {
                 return NotFound();
             }
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync(int? id){
-            if (id == null){
+        public async Task<IActionResult> OnPostAsync(int? id)
+        {
+            if (id == null)
+            {
                 return NotFound();
             }
+
             StoreList = await _context.StoreList.FindAsync(id);
-            if (StoreList != null){
+
+            if (StoreList != null)
+            {
                 _context.StoreList.Remove(StoreList);
                 await _context.SaveChangesAsync();
             }
+
             return RedirectToPage("./Index");
         }
     }

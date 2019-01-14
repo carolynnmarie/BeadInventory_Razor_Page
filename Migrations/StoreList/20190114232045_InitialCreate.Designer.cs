@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BeadDotNetApp.Migrations.StoreList
 {
     [DbContext(typeof(StoreListContext))]
-    [Migration("20181206005710_InitialCreateStoreList")]
-    partial class InitialCreateStoreList
+    [Migration("20190114232045_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

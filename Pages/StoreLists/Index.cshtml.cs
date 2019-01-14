@@ -12,14 +12,21 @@ namespace BeadDotNetApp.Pages.StoreLists{
     public class IndexModel : PageModel{
 
         private readonly StoreListContext _context;
-        public IList<BeadDotNetApp.Models.StoreList> StoreList { get;set; }
 
-        public IndexModel(BeadDotNetApp.Models.StoreListContext context){
+        public IndexModel(StoreListContext context){
             _context = context;
         }
 
+        public IList<StoreList> StoreList { get;set; }
+        public IList<Bead> Bead {get;set;}
+        public IList<Finding> Finding {get;set;}
+        public IList<StringingMaterial> StringingMaterial {get;set;}
+
         public async Task OnGetAsync(){
             StoreList = await _context.StoreList.ToListAsync();
+            // Bead = await _context.Bead.ToListAsync();
+            // Finding = await _context.Finding.ToListAsync();
+            // StringingMaterial = await _context.StringingMaterial.ToListAsync();
         }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace BeadDotNetApp.Migrations.StoreList
 {
-    public partial class InitialCreateStoreList : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -8,47 +8,66 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BeadDotNetApp.Models;
 
-namespace BeadDotNetApp.Pages.StoreLists{
+namespace BeadDotNetApp.Pages.StoreLists
+{
+    public class EditModel : PageModel
+    {
+        private readonly BeadDotNetApp.Models.StoreListContext _context;
 
-    public class EditModel : PageModel{
-
-        private readonly StoreListContext _context;
-        [BindProperty]
-        public BeadDotNetApp.Models.StoreList StoreList { get; set; }
-
-        public EditModel(StoreListContext context){
+        public EditModel(BeadDotNetApp.Models.StoreListContext context)
+        {
             _context = context;
         }
 
-        public async Task<IActionResult> OnGetAsync(int? id){
-            if (id == null){
+        [BindProperty]
+        public StoreList StoreList { get; set; }
+
+        public async Task<IActionResult> OnGetAsync(int? id)
+        {
+            if (id == null)
+            {
                 return NotFound();
             }
+
             StoreList = await _context.StoreList.FirstOrDefaultAsync(m => m.ID == id);
-            if (StoreList == null){
+
+            if (StoreList == null)
+            {
                 return NotFound();
             }
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync(){
-            if (!ModelState.IsValid){
+        public async Task<IActionResult> OnPostAsync()
+        {
+            if (!ModelState.IsValid)
+            {
                 return Page();
             }
+
             _context.Attach(StoreList).State = EntityState.Modified;
-            try{
+
+            try
+            {
                 await _context.SaveChangesAsync();
-            } catch (DbUpdateConcurrencyException) {
-                if (!StoreListExists(StoreList.ID)){
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!StoreListExists(StoreList.ID))
+                {
                     return NotFound();
-                }else{
+                }
+                else
+                {
                     throw;
                 }
             }
+
             return RedirectToPage("./Index");
         }
 
-        private bool StoreListExists(int id){
+        private bool StoreListExists(int id)
+        {
             return _context.StoreList.Any(e => e.ID == id);
         }
     }
