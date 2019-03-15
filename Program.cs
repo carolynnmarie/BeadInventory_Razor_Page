@@ -26,7 +26,7 @@ namespace BeadDotNetApp{
                     SeedData.Initialize(services);
                     SeedFindingData.InitializeData(services);
                     SeedStrMtrData.Initialize(services);
-                    SeedStoreListData.InitializeData(services);
+                    
                 }catch (Exception ex){
                     var logger = services.GetRequiredService<ILogger<Program>>();
                     logger.LogError(ex, "An error occurred seeding the DB.");

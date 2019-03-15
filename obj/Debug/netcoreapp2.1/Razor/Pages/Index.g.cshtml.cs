@@ -61,7 +61,7 @@ using BeadDotNetApp;
             WriteLiteral("\r\n\r\n<div class=\"item\">\r\n    <span style=\"font-size: x-large\">\r\n        ");
             EndContext();
             BeginContext(142, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c7521f8df4734cfe9969f825e4a107ed", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c2f8341483634afba4617a1afc9bd179", async() => {
                 BeginContext(170, 5, true);
                 WriteLiteral("Beads");
                 EndContext();
@@ -83,7 +83,7 @@ using BeadDotNetApp;
             WriteLiteral("\r\n    </span>\r\n</div>\r\n<div class=\"item\">\r\n    <span style=\"font-size: x-large\">\r\n        ");
             EndContext();
             BeginContext(269, 43, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "215114354980464e88e6993293fa8ba2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c8eca410e79b4bcba7911b300ff63bda", async() => {
                 BeginContext(300, 8, true);
                 WriteLiteral("Findings");
                 EndContext();
@@ -105,7 +105,7 @@ using BeadDotNetApp;
             WriteLiteral("\r\n    </span>\r\n</div>\r\n<div class=\"item\">\r\n    <span style=\"font-size: x-large\">\r\n        ");
             EndContext();
             BeginContext(402, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "104df6220ff0423d83937a5d5e44d050", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c74c574b4888488daaaa51bd9c0cd8d2", async() => {
                 BeginContext(443, 19, true);
                 WriteLiteral("Stringing Materials");
                 EndContext();
@@ -127,7 +127,7 @@ using BeadDotNetApp;
             WriteLiteral("\r\n    </span>\r\n</div>\r\n<div class=\"item\">\r\n    <span style=\"font-size: x-large\">\r\n        ");
             EndContext();
             BeginContext(556, 48, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b0ac6e875b8b404a9fdbd08b2837fb02", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0b68c20c4ae6446d96d899ec2b99226e", async() => {
                 BeginContext(589, 11, true);
                 WriteLiteral("Store Lists");
                 EndContext();
@@ -149,7 +149,7 @@ using BeadDotNetApp;
             WriteLiteral("\r\n    </span>\r\n</div>\r\n<div class=\"item\">\r\n    <span style=\"text-align: right\">\r\n        <span style=\"font-size:x-small\">\r\n        ");
             EndContext();
             BeginContext(735, 72, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2f93be81269f42979381986872801837", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4c976d6af51d420e8ca234f4942dc93d", async() => {
                 BeginContext(759, 44, true);
                 WriteLiteral("\r\n        <button>Privacy</button>\r\n        ");
                 EndContext();
@@ -171,7 +171,7 @@ using BeadDotNetApp;
             WriteLiteral("\r\n        ");
             EndContext();
             BeginContext(817, 72, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a21122fabbd41bf836edc0a9f89dd0a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f0fa3b9ac3e04e399bd8034f83e63bc8", async() => {
                 BeginContext(841, 44, true);
                 WriteLiteral("\r\n        <button>Contact</button>\r\n        ");
                 EndContext();
@@ -193,7 +193,7 @@ using BeadDotNetApp;
             WriteLiteral("\r\n        ");
             EndContext();
             BeginContext(899, 68, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "677bcdff41e1427284d43b0b59a5a158", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "24e31b5bad4a409d8357b84efd61c6c8", async() => {
                 BeginContext(921, 42, true);
                 WriteLiteral("\r\n        <button>About</button>\r\n        ");
                 EndContext();
