@@ -12650,11 +12650,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/carolynn/dev/C-Sharp/Asp_Net_Core/BeadDotNetApp/BeadDotNetApp.csproj",
+      "projectUniqueName": "/Users/carolynn/dev/Asp_Net_Core/BeadDotNetApp/BeadDotNetApp.csproj",
       "projectName": "BeadDotNetApp",
-      "projectPath": "/Users/carolynn/dev/C-Sharp/Asp_Net_Core/BeadDotNetApp/BeadDotNetApp.csproj",
+      "projectPath": "/Users/carolynn/dev/Asp_Net_Core/BeadDotNetApp/BeadDotNetApp.csproj",
       "packagesPath": "/Users/carolynn/.nuget/packages/",
-      "outputPath": "/Users/carolynn/dev/C-Sharp/Asp_Net_Core/BeadDotNetApp/obj/",
+      "outputPath": "/Users/carolynn/dev/Asp_Net_Core/BeadDotNetApp/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -12670,6 +12670,7 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
           "projectReferences": {}
         }
       },
@@ -12681,6 +12682,7 @@
     },
     "frameworks": {
       "netcoreapp2.1": {
+        "targetAlias": "netcoreapp2.1",
         "dependencies": {
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
@@ -12713,10 +12715,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
       }
     }
   }
